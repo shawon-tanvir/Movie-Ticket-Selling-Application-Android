@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CEC9D1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.second.theatretics.HallListActivity">
+
+
+    <ImageView
+        android:id="@+id/imageIconHallList"
+        android:layout_width="212dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="0dp"
+        android:background="#CEC9D1" />
+
+    <TextView
+        android:id="@+id/MovienameHallList"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textColor="#0F0F0F"
+        android:paddingTop="18dp"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/imageIconHallList"
+        android:textAlignment="textStart"
+        android:textFontWeight="Bold"
+        android:background="#CEC9D1"
+        android:textSize="16sp"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    <TextView
+        android:id="@+id/AvailableHallList"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:textColor="#6D6868"
+        android:layout_toRightOf="@id/imageIconHallList"
+        android:layout_below="@+id/MovienameHallList"
+        android:textAlignment="textStart"
+
+        android:paddingLeft="10dp"
+        android:background="#CEC9D1"
+        android:textSize="14sp"
+        android:text="Available"
+        android:layout_marginBottom="5dp"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    <ListView
+        android:id="@+id/foodlist"
+        android:layout_width="match_parent"
+        android:background="#F2F6F7"
+        android:textColor="#f4fafa"
+        android:layout_height="800dp"
+        android:layout_below="@+id/imageIconHallList"
+        android:layout_alignParentStart="true">
+
+        </ListView>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:clickable="true"
+            android:visibility="visible"
+            app:layout_anchorGravity="bottom|right|end" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

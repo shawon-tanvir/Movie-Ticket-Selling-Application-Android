@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.second.theatretics.HallListActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/MovienameHallbooking"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#0F0F0F"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+
+        android:textAlignment="textStart"
+        android:textFontWeight="Bold"
+        android:background="#D7D3DA"
+        android:textSize="18sp"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    <TextView
+        android:id="@+id/HallnameHallbooking"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#0F0F0F"
+
+        android:layout_below="@+id/MovienameHallbooking"
+
+        android:text="jsshcv"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="#9D9C9E"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <Button
+        android:id="@+id/Buttontoday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HallnameHallbooking"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:onClick="btn1click"
+        android:text="Button"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/Buttontommorrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HallnameHallbooking"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:onClick="btn2click"
+        android:layout_toRightOf="@id/Buttontoday"
+        android:text="Button"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/Buttondayaftertommorow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HallnameHallbooking"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:onClick="btn3click"
+        android:layout_toRightOf="@id/Buttontommorrow"
+        android:text="Button"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/Theatretext"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#0F0F0F"
+        android:textAlignment="center"
+        android:layout_below="@+id/Buttondayaftertommorow"
+
+        android:text="Theatres"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="#9D9C9E"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    <Button
+        android:id="@+id/Theatre1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Theatretext"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:onClick="Theatre1btn1click"
+        android:text="Button"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/Theatre2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Theatre1"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:onClick="Theatre2btn1click"
+        android:text="Button"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/Theatre3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Theatre2"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:onClick="Theatre3btn1click"
+        android:text="Button"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/Showtimetext"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#0F0F0F"
+        android:textAlignment="center"
+        android:layout_below="@id/Theatre3"
+
+        android:text="Showtimes"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="#9D9C9E"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    <Button
+        android:id="@+id/Showtime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Showtimetext"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:onClick="Showtime1btn1click"
+        android:text="Button"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/Showtime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Showtimetext"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:onClick="Showtime2btn1click"
+        android:layout_toRightOf="@id/Showtime1"
+        android:text="Button"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/Showtime3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Showtimetext"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:onClick="Showtime3btn1click"
+        android:layout_toRightOf="@id/Showtime2"
+        android:text="Button"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/Seattypetext"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#0F0F0F"
+        android:textAlignment="center"
+        android:layout_below="@id/Showtime3"
+
+        android:text="Seat Types"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="#9D9C9E"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    <Button
+        android:id="@+id/Seattype1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Seattypetext"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:text="Button"
+        android:onClick="Seattype1btn1click"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/Seattype2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Seattype1"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Button"
+        android:onClick="Seattype2btn1click"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/Seattext"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#0F0F0F"
+        android:textAlignment="center"
+        android:layout_below="@id/Seattype2"
+
+        android:text="Seat Types"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="#9D9C9E"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Seattext"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:visibility="invisible"
+        android:text="" />
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Seattext"
+        android:layout_toRightOf="@id/checkBox1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:visibility="invisible"
+        android:text="" />
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Seattext"
+        android:layout_toRightOf="@id/checkBox2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:visibility="invisible"
+        android:text="" />
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Seattext"
+        android:layout_toRightOf="@id/checkBox3"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:visibility="invisible"
+        android:text="" />
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Seattext"
+        android:layout_toRightOf="@id/checkBox4"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:visibility="invisible"
+        android:text="" />
+    <TextView
+        android:id="@+id/checkBoxText1"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox5"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:visibility="invisible"
+        android:text="107"
+        />
+    <TextView
+        android:id="@+id/checkBoxText2"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox5"
+        android:layout_toRightOf="@id/checkBoxText1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="43dp"
+        android:visibility="invisible"
+        android:text="107"
+        />
+    <TextView
+        android:id="@+id/checkBoxText3"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox5"
+        android:layout_toRightOf="@id/checkBoxText2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="43dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:text="107"
+        />
+    <TextView
+        android:id="@+id/checkBoxText4"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox5"
+        android:layout_toRightOf="@id/checkBoxText3"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="43dp"
+        android:visibility="invisible"
+        android:text="107"
+        />
+    <TextView
+        android:id="@+id/checkBoxText5"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox5"
+        android:layout_toRightOf="@id/checkBoxText4"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="43dp"
+        android:visibility="invisible"
+        android:text="107"
+        />
+    <Button
+        android:id="@+id/orderbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/checkBoxText5"
+        android:layout_marginTop="10dp"
+        android:text="Book Order"
+        android:background="#4CAF50"
+        android:onClick="OrderButtonclick"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
+</ScrollView>

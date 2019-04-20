@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <EditText
+        android:id="@+id/AddHallName"
+        android:hint="Hall Name"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/AddHallAddress"
+        android:hint="Hall Address"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/AddHallName"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/AddHallPhone"
+        android:hint="Hall Phone"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/AddHallAddress"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/AddHallOwner"
+        android:hint="Hall Owner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/AddHallPhone"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/AddHall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Hall"
+        tools:layout_editor_absoluteY="280dp"
+        tools:layout_editor_absoluteX="162dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/AddHallOwner"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
+
+
+

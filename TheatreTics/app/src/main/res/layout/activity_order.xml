@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <TextView
+        android:id="@+id/orderDateText"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="30dp"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Date:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        />
+    <TextView
+        android:id="@+id/orderDate"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+
+        android:layout_height="30dp"
+        android:background="#FFFCFC"
+        android:textColor="#070707"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/orderDateText"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/orderemailText"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/orderDateText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Email:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        />
+    <TextView
+        android:id="@+id/orderemail"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+        android:layout_below="@id/orderDateText"
+        android:layout_height="30dp"
+        android:background="#FFFCFC"
+        android:textColor="#070707"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/orderemailText"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/seatnumberText"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Seats:"
+        android:textAlignment="center"
+        android:layout_below="@id/orderemail"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        />
+    <TextView
+        android:id="@+id/seatnumbers"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+
+        android:layout_height="30dp"
+        android:background="#FFFCFC"
+        android:textColor="#070707"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/seatnumberText"
+        android:layout_below="@id/orderemail"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/totalseatText"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Total Seat:"
+        android:textAlignment="center"
+        android:layout_below="@id/seatnumbers"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        />
+    <TextView
+        android:id="@+id/totalseat"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+
+        android:layout_height="30dp"
+        android:background="#FFFCFC"
+        android:textColor="#070707"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/totalseatText"
+        android:layout_below="@id/seatnumbers"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/totalamountText"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Total Amount:"
+        android:textAlignment="center"
+        android:layout_below="@id/totalseat"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        />
+    <TextView
+        android:id="@+id/totalamount"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+
+        android:layout_height="30dp"
+        android:background="#FFFCFC"
+        android:textColor="#070707"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/totalamountText"
+        android:layout_below="@id/totalseat"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/ordermovieText"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Movie:"
+        android:textAlignment="center"
+        android:layout_below="@id/totalamountText"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        />
+    <TextView
+        android:id="@+id/ordermovie"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+
+        android:layout_height="30dp"
+        android:background="#FFFCFC"
+        android:textColor="#070707"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/ordermovieText"
+        android:layout_below="@id/totalamountText"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/orderhallText"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Hall:"
+        android:textAlignment="center"
+        android:layout_below="@id/ordermovieText"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:id="@+id/orderhall"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+
+        android:layout_height="30dp"
+        android:layout_below="@id/ordermovieText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/orderhallText"
+        android:background="#FFFCFC"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#070707"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/orderTheatreText"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Theatre:"
+        android:textAlignment="center"
+        android:layout_below="@id/orderhallText"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:id="@+id/orderTheatre"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+
+        android:layout_height="30dp"
+        android:layout_below="@id/orderhallText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/orderTheatreText"
+        android:background="#FFFCFC"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#070707"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/orderShowtimeText"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Showtime:"
+        android:textAlignment="center"
+        android:layout_below="@id/orderTheatreText"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:id="@+id/orderShowtime"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+
+        android:layout_height="30dp"
+        android:layout_below="@id/orderTheatreText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/orderTheatreText"
+        android:background="#FFFCFC"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#070707"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/orderSeattypeText"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Seat Type:"
+        android:textAlignment="center"
+        android:layout_below="@id/orderShowtimeText"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:id="@+id/orderSeattype"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+
+        android:layout_height="30dp"
+        android:layout_below="@id/orderShowtimeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/orderSeattypeText"
+        android:background="#FFFCFC"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#070707"
+        android:textSize="15sp" />
+
+
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="#9ba6de"
+        android:text="Confirm Order"
+
+
+        android:layout_below="@+id/orderSeattype"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+
+
+
+</RelativeLayout>
+
+

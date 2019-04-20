@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <EditText
+        android:id="@+id/createnamebox"
+        style="@android:style/Widget.Material.EditText"
+        android:textAlignment="center"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="#393b3b"
+        android:textColor="#edf7f6"
+        android:textColorHint="#edf7f6"
+        android:hint="User Name"
+        android:textSize="15sp"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+         />
+    <EditText
+        android:id="@+id/createaddressbox"
+
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+        android:textAlignment="center"
+        android:layout_height="30dp"
+
+        android:background="#393b3b"
+        android:textColor="#edf7f6"
+        android:textColorHint="#edf7f6"
+        android:textSize="15sp"
+        android:hint="Address"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/createnamebox"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/createphonebox"
+
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+        android:textAlignment="center"
+        android:layout_height="30dp"
+
+        android:background="#393b3b"
+        android:textColor="#edf7f6"
+        android:textColorHint="#edf7f6"
+        android:textSize="15sp"
+        android:hint="Phone"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/createaddressbox"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/createemailbox"
+
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+        android:textAlignment="center"
+        android:layout_height="30dp"
+
+        android:background="#393b3b"
+        android:textColor="#edf7f6"
+        android:textColorHint="#edf7f6"
+        android:textSize="15sp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/createphonebox"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/createpasswordbox"
+        style="@android:style/Widget.Material.EditText"
+        android:textAlignment="center"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="#393b3b"
+        android:textColor="#edf7f6"
+        android:textColorHint="#edf7f6"
+        android:hint="Password"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/createemailbox"
+        android:layout_centerHorizontal="true"
+       />
+    <EditText
+        android:id="@+id/createconfirmpasswordbox"
+        style="@android:style/Widget.Material.EditText"
+        android:textAlignment="center"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="#393b3b"
+        android:textColor="#edf7f6"
+        android:textColorHint="#edf7f6"
+        android:hint="Confirm Password"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/createpasswordbox"
+        android:layout_centerHorizontal="true"
+         />
+
+    <Button
+        android:id="@+id/createbutton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="#9ba6de"
+        android:text="Create ID"
+        android:layout_below="@+id/createconfirmpasswordbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo"
+        android:foregroundGravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+
+</RelativeLayout>
+
+
